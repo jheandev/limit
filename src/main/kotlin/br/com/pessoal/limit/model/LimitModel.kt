@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import java.time.LocalDateTime
 
-@Entity(name = "`limit`")
+@Entity(name = "`Limit`")
 data class LimitModel(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
@@ -19,7 +19,7 @@ data class LimitModel(
     @Column
     var period: String,
 
-    @Column(name = "current_amout")
+    @Column(name = "current_amount")
     var currentAmount: Long,
 
     @Column(name = "max_amount")

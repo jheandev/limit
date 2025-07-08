@@ -8,8 +8,8 @@ import jakarta.persistence.Id
 import java.time.LocalDateTime
 
 
-@Entity(name = "Limit_Usage")
-data class Limit_UsageModel (
+@Entity(name = "LimitUsage")
+data class LimitUsageModel (
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -7,8 +7,8 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import java.time.LocalDateTime
 
-@Entity(name = "Limit_Request")
-data class Limit_RequestModel(
+@Entity(name = "LimitRequest")
+data class LimitRequestModel(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     var id: Int? = null,

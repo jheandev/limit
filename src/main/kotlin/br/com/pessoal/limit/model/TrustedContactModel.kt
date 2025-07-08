@@ -7,16 +7,12 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import java.time.LocalDateTime
 
-
-@Entity(name = "Request_Trust_Contact")
-data class Request_Trust_ContactModel (
+@Entity(name = "TrustedContact")
+data class TrustedContactModel (
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int? = null,
-
-    @Column(name = "owner_id")
-    var ownerId: Long,
 
     @Column
     var document: String,
@@ -24,22 +20,20 @@ data class Request_Trust_ContactModel (
     @Column
     var name: String,
 
+    @Column(name = "is_active")
+    var isActive: Boolean,   //ativo
+
+    @Column(name = "owner_id")
+    var ownerId: Long,
+
+    @Column(name = "request_trust_contact_id")
+    var request_trust_contactId: Long,    //contato de confiança
+
     @Column(name = "created_at")
     var createdAt: LocalDateTime,
 
     @Column(name = "update_at")
-    var updateAt: LocalDateTime,
+    var updateAt: LocalDateTime
 
-    @Column
-    var status: String
 
 )
-
-
-
-
-
-
-
-
-
