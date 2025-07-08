@@ -5,12 +5,10 @@ import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
-import org.apache.commons.logging.Log
 import java.time.LocalDateTime
-import kotlin.math.log
 
-@Entity(name = "Limit_request")
-data class Limit_requestModel(
+@Entity(name = "Limit_Request")
+data class Limit_RequestModel(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     var id: Int? = null,

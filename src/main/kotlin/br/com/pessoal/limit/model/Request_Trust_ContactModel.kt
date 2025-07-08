@@ -8,8 +8,8 @@ import jakarta.persistence.Id
 import java.time.LocalDateTime
 
 
-@Entity(name = "Request_trust_contact")
-data class Request_trust_contactModel (
+@Entity(name = "Request_Trust_Contact")
+data class Request_Trust_ContactModel (
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )

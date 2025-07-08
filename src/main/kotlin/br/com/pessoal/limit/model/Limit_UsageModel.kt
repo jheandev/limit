@@ -8,33 +8,33 @@ import jakarta.persistence.Id
 import java.time.LocalDateTime
 
 
-@Entity(name = "Limit_usage")
-data class Limit_usageModel (
+@Entity(name = "Limit_Usage")
+data class Limit_UsageModel (
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int? = null,
 
     @Column(name = "limit_id")
-    var limitId: Long,
+    var limitId: Long,  //limite
 
     @Column(name = "owner_id")
-    var ownerId: Long,
+    var ownerId: Long, //proprietario
 
     @Column(name = "transaction_id")
-    var transactionId: Long,
+    var transactionId: Long, //função
 
     @Column
-    var amount: Long,
+    var amount: Long, //quantia
 
     @Column
-    var status: String,
+    var status: String,  //status
 
     @Column(name = "created_at")
-    var createdAt: LocalDateTime,
+    var createdAt: LocalDateTime,   //criada
 
     @Column(name = "update_at")
-    var updateAt: LocalDateTime,
+    var updateAt: LocalDateTime  //atualizar
 
 
 

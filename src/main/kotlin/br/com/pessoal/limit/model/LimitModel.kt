@@ -14,7 +14,7 @@ data class LimitModel(
     var id: Int? = null,
 
     @Column(name = "owner_id")
-    var ownerId: Long,
+    var ownerId:Long,
 
     @Column
     var period: String,
@@ -33,7 +33,6 @@ data class LimitModel(
 
     @Column(name = "updated_at")
     var updatedAt: LocalDateTime
-
 
 )
 
