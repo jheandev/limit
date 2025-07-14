@@ -27,7 +27,7 @@ data class TrustedContactModel (
     var ownerId: Long,
 
     @Column(name = "request_trust_contact_id")
-    var request_trust_contactId: Long,    //contato de confiança
+    var requestTrustContactId: Long,    //contato de confiança
 
     @Column(name = "created_at")
     var createdAt: LocalDateTime,
