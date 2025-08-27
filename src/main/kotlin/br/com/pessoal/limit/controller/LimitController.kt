@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/owner/{owner_id}/limits")
-class LimitQueryController {
+class LimitController {
 
     @GetMapping
     fun listAllByOwner(@PathVariable("owner_id") ownerId: Long): List<LimitResponse> {
